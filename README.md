@@ -2,42 +2,28 @@
 
 Punycode-convertor is a JavaScript module designed for encoding and decoding internationalized domain names (IDNs) using the Punycode-convertor encoding scheme. Punycode-convertor allows Unicode characters to be represented using the ASCII character set supported by the Domain Name System (DNS).
 
+## Installation
+
+```bash
+npm install punycode-convertor
+```
+
 ## Features
 
--   **Encode Unicode Strings**: Convert any Unicode string to its ASCII-compatible Punycode format.
--   **Decode Punycode Strings**: Revert Punycode encoded strings back to their original Unicode form.
--   **Domain Name Conversion**: Easily convert entire domain names to and from Punycode, supporting internationalized domain names.
+-   **Domain Name Conversion**:
+    -   Convert from Unicode to Punycode, supporting internationalized domain names.
+    -   Convert from Punycode to Unicode, supporting internationalized domain names.
 
 ## Usage
 
-Below are some examples of how to use the Punycode.js module in your JavaScript applications.
-
-### Encoding Unicode to Punycode
-
-```js
-const { encode } = require('./punycode.js');
-
-let unicodeString = 'こんにちは';
-let punycodeString = encode(unicodeString);
-console.log(punycodeString); // Outputs Punycode encoded string
-```
-
-### Decoding Punycode to Unicode
-
-```ja
-const { decode } = require('./punycode.js');
-
-let punycodeString = "xn--cck2b3b";
-let unicodeString = decode(punycodeString);
-console.log(unicodeString);  // Outputs "こんにちは"
-```
+The Punycode-convertor module provides straightforward functions to handle the conversion of domain names between Unicode and Punycode formats. Below are detailed examples illustrating how to use these functions in your JavaScript applications.
 
 ### Converting Domain Names
 
 #### Unicode to Punycode
 
 ```js
-const { unicodeToPunycode } = require('./punycode.js');
+const { unicodeToPunycode } = require('./punycode-convertor');
 
 let domain = 'münchen.de';
 let punycodeDomain = unicodeToPunycode(domain);
@@ -47,7 +33,7 @@ console.log(punycodeDomain); // Outputs "xn--mnchen-3ya.de"
 #### Punycode to Unicode
 
 ```js
-const { punycodeToUnicode } = require('./punycode.js');
+const { punycodeToUnicode } = require('./punycode-convertor');
 
 let punycodeDomain = 'xn--mnchen-3ya.de';
 let unicodeDomain = punycodeToUnicode(punycodeDomain);
