@@ -1,0 +1,33 @@
+{
+  "name": "punycode-convertor",
+  "version": "1.0.0",
+  "description": "A robust and efficient JavaScript library for encoding and decoding Unicode text to and from Punycode. This package provides a comprehensive solution for handling Punycode transformations, essential for internationalized domain names (IDNs) and other applications requiring Unicode compatibility. With punycode-converter, developers can seamlessly convert entire domain names or individual text segments between Unicode and Punycode formats.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanuelamz21/punycode-convertor.git"
+  },
+  "keywords": [
+    "punycode",
+    "unicode",
+    "idn",
+    "encode",
+    "decode",
+    "internationalization",
+    "domain",
+    "ascii",
+    "url",
+    "transformation",
+    "dns",
+    "conversion"
+  ],
+  "author": "Amuza Emanuel-Alexandru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emanuelamz21/punycode-convertor/issues"
+  },
+  "homepage": "https://github.com/emanuelamz21/punycode-convertor#readme"
+}
